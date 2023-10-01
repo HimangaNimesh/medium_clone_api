@@ -1,10 +1,10 @@
 import express from "express"
-import { singin, singup } from "./auth.Controller.js"
+import { singin, signup } from "./users.Controller.js"
 
 const router = express.Router();
 
 //CREATE A USER
-router.post("/signup", singup)
+router.post("/", signup)
 
 //SIGN IN
 router.post("/signin", singin)
